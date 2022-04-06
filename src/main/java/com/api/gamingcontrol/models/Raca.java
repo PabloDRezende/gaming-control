@@ -10,7 +10,7 @@ public class Raca {
     private String nome;
     private String idioma;
     private Integer id_habilidade;
-    private Integer id_subraca;
+    private Integer id_subraca;/**/
 
     public Integer getId() {
         return id;
