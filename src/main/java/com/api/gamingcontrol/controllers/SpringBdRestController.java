@@ -24,7 +24,7 @@ public class SpringBdRestController {
     public void deleteRacas() {
         racaService.deleteAllRacas();
     }
-    @RequestMapping(value = "/rest/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/rest/delete/raca{id}", method = RequestMethod.DELETE)
     public void deleteRaca(@PathVariable("id") Integer id) {
         racaService.deleteRacaById(id);
     }

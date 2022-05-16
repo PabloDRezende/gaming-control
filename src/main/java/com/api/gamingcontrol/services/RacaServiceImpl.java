@@ -1,11 +1,8 @@
 package com.api.gamingcontrol.services;
-
-
 import com.api.gamingcontrol.models.Raca;
 import com.api.gamingcontrol.repositories.RacaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -19,6 +16,7 @@ public class RacaServiceImpl implements RacaService {
     }
     @Override
     public List<Raca> getAllRacas() {
+
         return racaRepository.findAll();
     }
     @Override
@@ -40,13 +38,8 @@ public class RacaServiceImpl implements RacaService {
 
     @Override
     public void updateRaca(Raca raca) {
-
     }
 
-    /*@Override
-    public void updateRaca(Raca Raca) {
-        racaRepository.save(raca);
-    }*/
     @Override
     public void insertRaca(Raca raca) {
         racaRepository.save(raca);
